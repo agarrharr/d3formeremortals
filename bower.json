@@ -1,0 +1,13 @@
+{
+  "name": "d3formeremortals.com",
+  "version": "0.0.0",
+  "homepage": "d3formeremortals.com",
+  "authors": [
+    "Adam Harris <aharris88@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "semantic-ui": "~2.0.8",
+    "jquery": "~2.1.4"
+  }
+}
