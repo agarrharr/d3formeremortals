@@ -8,5 +8,5 @@ paginate: 5
 siteurl: http://www.d3formeremortals.com
 baseurl:
 disqus_shortname:
-google_analytics_code:
+google_analytics_code: UA-31980509-12
 exclude: [bower.json, README.md]
