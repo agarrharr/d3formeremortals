@@ -1,0 +1,12 @@
+title: D3 for Mere Mortals
+description: Resources for learning and using d3.js
+markdown: kramdown
+highlighter: pygments
+permalink: /:categories/:title/
+category_dir: category
+paginate: 5
+siteurl: http://www.d3formeremortals.com
+baseurl:
+disqus_shortname:
+google_analytics_code:
+exclude: [bower.json, README.md]
