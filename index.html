@@ -3,13 +3,43 @@ layout: default
 ---
 
 <div class="ui vertical stripe segment">
-<div class="ui text container">
-  <h3 class="ui header">Blog Post 1</h3>
-  <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-  <a class="ui large button">Read More</a>
+	<div class="ui text container">
+		{% for post in paginator.posts %}
+			<h3 class="ui header"><a href="{{site.url}}{{post.url}}">{{post.title}}</a></h3>
+			<p>{{post.excerpt}}&hellip;</p>
+			<a class="ui large button" href="{{site.url}}{{post.url}}">Read More</a>
+			<!--{{post.date | date_to_xmlschema}}-->
+			<!--{{post.date | date_to_long_string}}-->
+		{% endfor %}
+	</div>
 
-  <h3 class="ui header">Blog Post 2</h3>
-  <p>Yes I know you probably disregarded the earlier boasts as non-sequitor filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-  <a class="ui large button">Read More</a>
-</div>
+	<!-- Pagination links -->
+	{% if paginator.total_posts > 1 %}
+		<!-- <div class="ui container"> -->
+<div class="ui vertical stripe segment">
+			<div class="ui grid centered">
+				{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+				{% else %}
+					<span>&laquo; Prev</span>
+				{% endif %}
+
+				{% for page in (1..paginator.total_pages) %}
+					{% if page == paginator.page %}
+						<em>{{ page }}</em>
+					{% elsif page == 1 %}
+						<a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+					{% else %}
+						<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+					{% endif %}
+				{% endfor %}
+
+				{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+				{% else %}
+					<span>Next &raquo;</span>
+				{% endif %}
+			</div>
+		</div>
+	{% endif %}
 </div>
