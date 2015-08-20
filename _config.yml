@@ -10,3 +10,8 @@ baseurl:
 disqus_shortname:
 google_analytics_code: UA-31980509-12
 exclude: [bower.json, README.md]
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
