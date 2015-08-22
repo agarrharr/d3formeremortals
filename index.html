@@ -6,10 +6,10 @@ layout: default
 	<div class="ui text container">
 		{% for post in paginator.posts %}
 			<h3 class="ui header"><a href="{{site.url}}{{post.url}}">{{post.title}}</a></h3>
+			<p>{{ post.date | date: "%B %-d, %Y" }}</p>
+			<p>by {{ post.author }}</p>
 			<p>{{post.excerpt}}&hellip;</p>
 			<a class="ui large button" href="{{site.url}}{{post.url}}">Read More</a>
-			<!--{{post.date | date_to_xmlschema}}-->
-			<!--{{post.date | date_to_long_string}}-->
 		{% endfor %}
 	</div>
 

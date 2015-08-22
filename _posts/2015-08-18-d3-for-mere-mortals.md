@@ -1,5 +1,6 @@
 ---
 title: D3 For Mere Mortals
+author: Adam Harris
 ---
 
 I learned d3, the way that I've learned most things that I've learned on my own. Learn just enough to get myself in trouble and then start building stuff. And then I ended up hating myself 6 months later, when I knew more of what I was doing.
