@@ -3,7 +3,7 @@ title: What is SVG?
 author: Adam Harris
 ---
 
-There are 2 ways of describing what SVG is. One is that SVG is a vector image format. And another is to say that it's a markup language to create graphics. It's written out with markup very similar to HTML or XML. It stands for Scalable Vector Graphics so that means that instead of representing the image with pixels, it's stored as vectors, which can scale as large as you want without losing any quality. You may have seen SVG as an option when saving files from Adobe Illustrator. That's because Illustrator saves imges in vector format and SVG is a vector format.
+There are 2 ways of describing what SVG is. One is that SVG is a vector image format. And another is to say that it's a markup language to create graphics. It's written out with markup very similar to HTML or XML. It stands for Scalable Vector Graphics which means that instead of representing the image with pixels, it's stored as vectors, which can scale as large as you want without losing any quality. You may have seen SVG as an option when saving files from Adobe Illustrator. That's because Illustrator saves imges in vector format and SVG is a vector format.
 
 It's been around for a while (1999) and it's supported in pretty much every web browser along with other image formats like jpg, gif, and png.
 
