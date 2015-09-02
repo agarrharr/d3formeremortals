@@ -13,12 +13,12 @@ It can also be embedded directly into an html document instead of being saved as
 
 {% highlight html %}
 <svg height="52" width="52">
-   <circle r="25" cy="26" cx="26" style="stroke: black; stroke-width: 1px; fill: blue;">
+   <circle r="25" cy="26" cx="26" style="stroke: black; stroke-width: 1px; fill: blue;" />
 </svg>
 {% endhighlight %}
 
 <svg height="52" width="52">
-   <circle r="25" cy="26" cx="26" style="stroke: black; stroke-width: 1px; fill: blue;">
+   <circle r="25" cy="26" cx="26" style="stroke: black; stroke-width: 1px; fill: blue;" />
 </svg>
 
 This draws a blue circle with a black outline and a radius of 25px on the page.
