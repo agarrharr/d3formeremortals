@@ -9,3 +9,8 @@ h3 a:hover {
 li {
    margin-top: 1em;
 }
+
+svg {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
