@@ -9,7 +9,7 @@ When I first starting learning D3.js, I was a little unclear when I was programm
 
 And when you don't know which technology is doing what, it's hard to understand what you're doing, it's hard to know that what you did really works, and it's hard to apply that to solving new problems.
 
-Also, often with D3, you'll be writing stuff like this:
+Often with D3, you'll be writing stuff like this:
 
 {% highlight javascript %}
 var data = [1, 2, 3, 5, 8];
