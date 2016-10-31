@@ -1,7 +1,7 @@
 title: D3 for Mere Mortals
 description: Resources for learning and using d3.js
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:categories/:title/
 category_dir: category
 paginate: 5
